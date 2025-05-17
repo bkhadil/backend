@@ -1,0 +1,61 @@
+### Build ###
+target/
+build/
+out/
+bin/
+*.jar
+*.war
+*.ear
+*.class
+*.log
+
+### IDE ###
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.classpath
+.project
+.factorypath
+.springBeans
+.vscode/
+
+### Maven ###
+pom.xml.versionsBackup
+dependency-reduced-pom.xml
+.mvn/
+mvnw
+mvnw.cmd
+
+### Database ###
+*.db
+*.h2.db
+
+### Environment ###
+.env
+*.properties
+!src/main/resources/application.properties
+!src/main/resources/application.yml
+
+### Logs ###
+logs/
+*.log
+tmp/
+
+### Other ###
+*.swp
+*.swo
+*.bak
+.DS_Store
+*.orig
+
+### Lombok ###
+lombok.config
+
+### Local override files ###
+src/main/resources/application-local*.properties
+src/main/resources/application-local*.yml
+
+### Dependency directories ###
+lib/
