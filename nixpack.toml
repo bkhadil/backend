@@ -1,0 +1,8 @@
+[phases.setup]
+commands = ["cd core"]
+
+[phases.build]
+commands = ["mvn clean package -DskipTests"]
+
+[phases.start]
+commands = ["java -Dserver.port=$PORT -jar core/target/demo-0.0.1-SNAPSHOT.jar"]
