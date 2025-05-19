@@ -207,6 +207,8 @@
               <artifactId>lombok</artifactId>
             </exclude>
           </excludes>
+          <mainClass>com.example.DemoApplication</mainClass>
+          <outputDirectory>core/target</outputDirectory>
         </configuration>
       </plugin>
     </plugins>
