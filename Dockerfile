@@ -16,4 +16,5 @@ FROM eclipse-temurin:21-jre-alpine
 COPY --from=build /app/core/target/demo-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Étape 6 : Commande de démarrage
-CMD ["java", "-Dserver.port=${PORT}", "-jar", "/app/app.jar"]
+CMD ["sh", "-c", "java -Dserver.port=$PORT -jar /app/app.jar"]
+
