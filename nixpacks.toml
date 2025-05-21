@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["maven", "openjdk21"]  # Utilisez openjdk21 pour Java 21
-
-[phases.build]
-cmds = ["cd core && mvn clean package -DskipTests"]
-
-[start]
-cmd = "cd core && java -Dserver.port=$PORT -jar target/demo-0.0.1-SNAPSHOT.jar"
