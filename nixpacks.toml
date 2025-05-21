@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["maven", "openjdk"]
+
+[phases.build]
+cmds = ["cd core && mvn clean package -DskipTests"]
+
+[start]
+cmd = "cd core && java -Dserver.port=$PORT -jar target/demo-0.0.1-SNAPSHOT.jar"
